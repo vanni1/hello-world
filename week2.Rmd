@@ -1,0 +1,21 @@
+---
+title: "week2"
+author: "Vanni de Clippele"
+date: "10 mei 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## R Markdown Slide using leaflet
+
+```{r myslide, warning=FALSE}
+library(leaflet)
+my_map <- leaflet() %>% addTiles()
+my_map <- my_map %>% addMarkers(lat=50.7907139,lng = 4.4021212,popup = "Vanni's swimming!")
+my_map
+```
+
